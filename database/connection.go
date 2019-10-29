@@ -5,13 +5,14 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/NicolasDeveloper/go-rest-api/env"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 // Connection : Providers the Mongo's connection
 func Connection() *mongo.Client {
-	clientOptions := options.Client().ApplyURI("mongodb://165.22.15.231:27017")
+	clientOptions := options.Client().ApplyURI("mongodb://" + env.Parameters.Database.Ip + ":" + env.Parameters.Database.Port)
 	client, err := mongo.Connect(context.TODO(), clientOptions)
 
 	if err != nil {

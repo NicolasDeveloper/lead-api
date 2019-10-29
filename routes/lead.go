@@ -23,7 +23,7 @@ func Post(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Print(newLead)
 	leads.Save(*newLead)
-	w.WriteHeader(http.StatusOK)
+	w.WriteHeader(http.StatusCreated)
 }
 
 /* Get: insert lead in database */
