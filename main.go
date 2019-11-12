@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/NicolasDeveloper/go-rest-api/env"
-	"github.com/NicolasDeveloper/go-rest-api/routes"
+	"github.com/NicolasDeveloper/lead-api/env"
+	"github.com/NicolasDeveloper/lead-api/routes"
 	"github.com/gorilla/mux"
 )
 

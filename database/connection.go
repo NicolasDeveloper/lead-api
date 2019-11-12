@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/NicolasDeveloper/go-rest-api/env"
+	"github.com/NicolasDeveloper/lead-api/env"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )

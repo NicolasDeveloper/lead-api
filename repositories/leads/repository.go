@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/NicolasDeveloper/go-rest-api/database"
-	"github.com/NicolasDeveloper/go-rest-api/dtos"
+	"github.com/NicolasDeveloper/lead-api/database"
+	"github.com/NicolasDeveloper/lead-api/dtos"
 )
 
 func Save(item dtos.Lead) error {

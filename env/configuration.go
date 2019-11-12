@@ -37,13 +37,12 @@ func InitConfiguration() {
 	if err != nil {
 		fmt.Printf("unable to decode into struct, %v", err)
 	}
-}
-	err := viper.Unmarshal(&Parameters)
+
+	err = viper.Unmarshal(&Parameters)
 
 	if err != nil {
 		fmt.Printf("unable to decode into struct, %v", err)
 	}
-}
 
 	if err != nil {
 		fmt.Printf("unable to decode into struct, %v", err)

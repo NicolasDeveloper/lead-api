@@ -7,8 +7,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/NicolasDeveloper/go-rest-api/dtos"
-	"github.com/NicolasDeveloper/go-rest-api/repositories/leads"
+	"github.com/NicolasDeveloper/lead-api/dtos"
+	"github.com/NicolasDeveloper/lead-api/repositories/leads"
 )
 
 /* Post: insert lead in database */
