@@ -25,8 +25,13 @@ type Database struct {
 
 func InitConfiguration() {
 	switch os.Getenv("ENVIRONMENT") {
-	default:
+	case "PROD":
 		viper.SetConfigName("prod.env")
+		viper.SetConfigType("yaml")
+		viper.AddConfigPath("./env")
+		viper.ReadInConfig()
+	default:
+		viper.SetConfigName("dev.env")
 		viper.SetConfigType("yaml")
 		viper.AddConfigPath("./env")
 		viper.ReadInConfig()
